@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    height: 80px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.card {
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.container-card {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-card img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.button-card, .button-remove {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button-card:hover, .button-remove:hover, .nav:hover {
+    background-color: #ff9800;
+}
+
+.cart-total {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.button-card {
+    /* ... otros estilos ... */
+    background-color: #000000;
+    color: white;
+    /* ... otros estilos ... */
+}
+
+.empty-cart-button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+.empty-cart-button:hover {
+    background-color: rgb(255, 145, 0);
+    justify-content: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para el formulario de contacto */
+#contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para los mensajes de error */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Estilos para el contenedor de la sección de contacto */
+.contact-section {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Estilos para el título de la sección */
+.contact-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el contenedor de tarjetas de productos con descuento */
+.discounted-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Opcional: ajusta el espaciado entre las tarjetas */
+}
+
+/* Estilos para las tarjetas de productos con descuento */
+.product-card {
+    flex-basis: calc(33.33% - 20px); /* Ancho deseado para cada tarjeta (33.33% menos el espaciado) */
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Estilos generales para el modo oscuro */
+.dark-mode {
+    background-color: #1e1e1e; /* Fondo oscuro */
+    color: white; /* Texto claro */
+}
+
+/* Estilos para las tarjetas de productos en modo oscuro */
+.dark-mode .container-cards .card {
+    background-color: #333; /* Fondo oscuro */
+    color: white; /* Texto claro */
+    /* Otros estilos específicos para las tarjetas en modo oscuro */
+}

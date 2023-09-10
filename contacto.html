@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="productos.html">
+                    Productos
+                </a>
+            </li>
+            <li>
+                <a href="carrito.html">
+                    Carrito
+                </a>
+            </li>
+            <li>
+                <a href="contacto.html">
+                    Contacto
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <h1>Contacto</h1>
+
+        <!-- Agrega un botón para cambiar el modo -->
+<button id="toggle-mode-button">
+    Cambiar Modo
+</button>
+
+
+    <!-- Formulario de contacto -->
+    <form id="contact-form" action="#" method="post">
+        <div class="form-group">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <span id="name-error" class="error-message"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <span id="email-error" class="error-message"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+            <span id="phone-error" class="error-message"></span>
+        </div>
+        
+
+        <div class="form-group">
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+            <span id="message-error" class="error-message"></span>
+        </div>
+
+        <div class="form-group">
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+
+    <script src="contacto.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="darkmode.js"></script>
+</body>
+</html>
