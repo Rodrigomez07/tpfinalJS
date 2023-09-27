@@ -193,3 +193,47 @@ button[type="submit"]:hover {
     color: white; /* Texto claro */
     /* Otros estilos específicos para las tarjetas en modo oscuro */
 }
+
+/* Estilos para el footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-info {
+    flex-basis: calc(50% - 20px);
+    max-width: 400px;
+    margin-right: 20px;
+}
+
+.social-icons {
+    flex-basis: calc(50% - 20px);
+    text-align: right;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+/* Estilos para los íconos de redes sociales (Font Awesome) */
+.fa-facebook:before {
+    content: "\f09a";
+}
+
+.fa-twitter:before {
+    content: "\f099";
+}
+
+.fa-instagram:before {
+    content: "\f16d";
+}
